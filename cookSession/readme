@@ -1,0 +1,12 @@
+
+
+
+1 response.set_cookie(key, value)
+2 request.COOKIE.get("key")
+3 request.session[key] = value  # 写
+  注意django对应操作
+
+4 requeset.session[key]    # 读
+5 requeset.session.flush()
+
+
