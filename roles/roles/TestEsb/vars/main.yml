@@ -1,0 +1,2 @@
+try_data: date +"%Y%m%d%H"
+find_zip: /home/jenkins/workspace/PAYMENT_BUILD_ONLY-connie/SRC/target_patch/*

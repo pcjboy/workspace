@@ -1,0 +1,32 @@
+- name: backup file
+  shell: cp -rf /home/java/tomcat-payment/webapps/payment_platform /home/java/tomcat-payment/webapps/payment_platform_{{ try_data }}
+
+- name: get zip
+  shell: find {{ find_zip }} -name {{ try_data }} | grep zip
+  register: zip_list
+
+- name: tomcat file  {{ item }}
+  unarchive: src={{ item }}  dest=/home/java/tomcat-payment/webapps/ owner=bwttomcat group=bwttomcat
+  with_items:
+     - "{{ zip_list.stdout_lines }}"
+
+- name: get kill pid tomcat-payment  list
+  shell: ps -ef | grep java | grep tomcat-payment | awk '{print $2}'
+  register: info11
+
+- name: kill tomcat-payment
+  shell: kill -9 {{ item }}
+  with_items:
+    - "{{ info11.stdout_lines }}"
+  ignore_errors: True
+
+- name: sh shell
+  shell: cd /home/java/tomcat-payment/bin && sh startup.sh
+  async: 180
+
+- name: get kill pid tomcat-payment list
+  shell: ps -ef | grep java | grep tomcat-payment
+  register: info12
+
+- name: echo {{ info12 }}
+  debug: msg={{ info12 }}
