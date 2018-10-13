@@ -1,0 +1,18 @@
+
+
+单表的分组查询：
+
+    查询每一个部门名称以及对应的员工数
+
+    emp:
+
+    id   name   age  salary   dep
+    1    alex   12   2000     销售部
+    2    egon   22   3000     人事部
+    3    wen    22   5000     人事部
+
+    sql: select Count(id) from emp group by dep;
+
+    思考：如何用ORM语法进行分级查询？
+
+    在单表分组下， 按着主键进行group by是没有任何意义的。
