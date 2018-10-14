@@ -1,4 +1,6 @@
 from django.shortcuts import render, HttpResponse, redirect
+import pymysql
+
 
 # Create your views here.
 
@@ -24,5 +26,16 @@ def login(request):
 
 
 def classes(request):
-    pass
-    return render(request, 'classess.html')
+    conn = pymysql.connect(host='10.21.10.58', port=3306, user='loginuser', passwd='loginuser', db='loginuser',
+                           charset='utf8')
+    cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+    cursor.execute("select id, title from login_classtable")
+    class_list = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    return render(request, 'classess.html', {'class_list': class_list})
+
+
+def add_class(request):
+
+    return render(request, "add_class.html")
