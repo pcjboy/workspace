@@ -26,7 +26,7 @@ def login(request):
 
 
 def classes(request):
-    conn = pymysql.connect(host='10.21.10.58', port=3306, user='loginuser', passwd='loginuser', db='loginuser',
+    conn = pymysql.connect(host='10.21.10.58', port=3306, user='login111', passwd='login111', db='login111',
                            charset='utf8')
     cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
     cursor.execute("select id, title from login_classtable")
@@ -40,9 +40,9 @@ def add_class(request):
     if request.method == 'GET':
         return render(request, "add_class.html")
     else:
-        print(request.POST)
+        # print(request.POST)
         v = request.POST.get('title')
-        conn = pymysql.connect(host='10.21.10.58', port=3306, user='loginuser', passwd='loginuser', db='loginuser',
+        conn = pymysql.connect(host='10.21.10.58', port=3306, user='login111', passwd='login111', db='login111',
                                charset='utf8')
         cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
         cursor.execute("insert into login_classtable(title) values (%s)", [v, ])
@@ -54,7 +54,7 @@ def add_class(request):
 
 def del_class(request):
     nid = request.GET.get('nid')
-    conn = pymysql.connect(host='10.21.10.58', port=3306, user='loginuser', passwd='loginuser', db='loginuser',
+    conn = pymysql.connect(host='10.21.10.58', port=3306, user='login111', passwd='login111', db='login111',
                            charset='utf8')
     cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
     cursor.execute("delete from login_classtable where id=(%s)", [nid, ])
@@ -67,19 +67,19 @@ def del_class(request):
 def edit_class(request):
     if request.method == "GET":
         nid = request.GET.get('nid')
-        conn = pymysql.connect(host='10.21.10.58', port=3306, user='loginuser', passwd='loginuser', db='loginuser',
+        conn = pymysql.connect(host='10.21.10.58', port=3306, user='login111', passwd='login111', db='login111',
                                charset='utf8')
         cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
         cursor.execute("select id,title from login_classtable where id= %s", [nid, ])
         result = cursor.fetchone()
         cursor.close()
         conn.close()
-        print(result)
+        # print(result)
         return render(request, 'edit_class.html', {'result': result})
     else:
         nid = request.GET.get('nid')
         title = request.POST.get('title')
-        conn = pymysql.connect(host='10.21.10.58', port=3306, user='loginuser', passwd='loginuser', db='loginuser',
+        conn = pymysql.connect(host='10.21.10.58', port=3306, user='login111', passwd='login111', db='login111',
                                charset='utf8')
         cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
         cursor.execute("update login_classtable set title=%s where id =%s", [title, nid])
@@ -96,7 +96,7 @@ def students(request):
     :return:
     '''
 
-    conn = pymysql.connect(host='10.21.10.58', port=3306, user='loginuser', passwd='loginuser', db='loginuser',
+    conn = pymysql.connect(host='10.21.10.58', port=3306, user='login111', passwd='login111', db='login111',
                            charset='utf8')
     cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
     cursor.execute("select login_student.id,login_student.name, login_classtable.title from login_student left JOIN login_classtable on login_student.class_id_id = login_classtable.id")
@@ -108,7 +108,7 @@ def students(request):
 
 def add_students(request):
     if request.method == "GET":
-        conn = pymysql.connect(host='10.21.10.58', port=3306, user='loginuser', passwd='loginuser', db='loginuser',
+        conn = pymysql.connect(host='10.21.10.58', port=3306, user='login111', passwd='login111', db='login111',
                                charset='utf8')
         cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
         cursor.execute("select id,title from login_classtable")
@@ -119,7 +119,7 @@ def add_students(request):
     else:
         name = request.POST.get('name')
         class_id = request.POST.get('class_id')
-        conn = pymysql.connect(host='10.21.10.58', port=3306, user='loginuser', passwd='loginuser', db='loginuser',
+        conn = pymysql.connect(host='10.21.10.58', port=3306, user='login111', passwd='login111', db='login111',
                                charset='utf8')
         cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
         cursor.execute("insert into login_student(name, class_id_id) values(%s,%s)", [name, class_id, ])
@@ -127,3 +127,11 @@ def add_students(request):
         cursor.close()
         conn.close()
         return redirect('/students/')
+
+
+from utils import sqlheper
+
+
+def edit_students(request):
+    class_list = sqlheper.get_list("select id,title from login_classtable", [])
+    return render(request, "edit_students.html", {'class_list':  class_list})

@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'loginAnduser.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        "NAME": 'loginuser',
-        "USER": 'loginuser',
-        "PASSWORD": 'loginuser',
+        "NAME": 'login111',
+        "USER": 'login111',
+        "PASSWORD": 'login111',
         "HOST": '10.21.10.58',
         "PORT": 3306,
     }
