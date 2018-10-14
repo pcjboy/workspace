@@ -6,26 +6,32 @@
 </head>
 <body>
 
-    <h1>班级列表</h1>
-    <div>
-        <a href="/addclass/">添加</a>
-    </div>
-    <table>
-        <thead>
+<h1>班级列表</h1>
+<div>
+    <a href="/addclass/">添加</a>
+</div>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>班级名称</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for row in class_list %}
         <tr>
-            <th>ID</th>
-            <th>班级名称</th>
-        </tr>
-        </thead>
-        <tbody>
-        {% for row in class_list %}
-            <tr>
             <td>{{ row.id }}</td>
             <td>{{ row.title }}</td>
-            </tr>
-        {% endfor %}
+            <td>
+                <a href="/edit_class/?nid={{ row.id }}">编辑</a>
+                ｜
+                <a href="/del_class/?nid={{ row.id }}">删除</a>
+            </td>
+        </tr>
+    {% endfor %}
 
-        </tbody>
-    </table>
+    </tbody>
+</table>
 </body>
 </html>

@@ -6,10 +6,12 @@
 </head>
 <body>
 
-    <h1>添加班级</h1>
-    <form action="" method="POST">
+    <h1>编辑班级</h1>
+    {{ result.id }}
+
+    <form method="POST" action="/edit_class/?nid={{ result.id }}">
         {% csrf_token %}
-        <p>班级: <input type="text" name="title"></p>
+        <p>班级名称: <input type="text" name="title" value="{{ result.title }}"></p>
         <input type="submit" value="提交">
     </form>
 </body>
