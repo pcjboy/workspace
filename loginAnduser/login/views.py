@@ -87,3 +87,43 @@ def edit_class(request):
         cursor.close()
         conn.close()
         return redirect('/classes/')
+
+
+def students(request):
+    '''
+    学生列表
+    :param request:  封装请求的所有信息
+    :return:
+    '''
+
+    conn = pymysql.connect(host='10.21.10.58', port=3306, user='loginuser', passwd='loginuser', db='loginuser',
+                           charset='utf8')
+    cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+    cursor.execute("select login_student.id,login_student.name, login_classtable.title from login_student left JOIN login_classtable on login_student.class_id_id = login_classtable.id")
+    student_list = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    return render(request, 'students.html', {'student_list': student_list})
+
+
+def add_students(request):
+    if request.method == "GET":
+        conn = pymysql.connect(host='10.21.10.58', port=3306, user='loginuser', passwd='loginuser', db='loginuser',
+                               charset='utf8')
+        cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+        cursor.execute("select id,title from login_classtable")
+        class_list = cursor.fetchall()
+        cursor.close()
+        conn.close()
+        return render(request, 'add_student.html', {'class_list': class_list})
+    else:
+        name = request.POST.get('name')
+        class_id = request.POST.get('class_id')
+        conn = pymysql.connect(host='10.21.10.58', port=3306, user='loginuser', passwd='loginuser', db='loginuser',
+                               charset='utf8')
+        cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+        cursor.execute("insert into login_student(name, class_id_id) values(%s,%s)", [name, class_id, ])
+        conn.commit()
+        cursor.close()
+        conn.close()
+        return redirect('/students/')
