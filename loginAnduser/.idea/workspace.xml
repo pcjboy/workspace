@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de7665f3-501b-4d3d-b343-6a15878c8f8a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/templates/edit_students.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/utils/sqlheper.py" afterDir="false" />
@@ -4624,7 +4625,7 @@
           <entry key="login_teacher" value="5" />
           <entry key="login_userinfo" value="1" />
           <entry key="py" value="10" />
-          <entry key="sql" value="9" />
+          <entry key="sql" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -4634,7 +4635,7 @@
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="10" />
           <entry key="SQL" value="2" />
-          <entry key="Scratch" value="7" />
+          <entry key="Scratch" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -4642,7 +4643,7 @@
           <entry key="ReadMe" value="146" />
           <entry key="cell" value="36" />
           <entry key="html" value="587" />
-          <entry key="py" value="1362" />
+          <entry key="py" value="1447" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
@@ -4650,7 +4651,7 @@
         <counts>
           <entry key="HTML" value="587" />
           <entry key="PLAIN_TEXT" value="146" />
-          <entry key="Python" value="1362" />
+          <entry key="Python" value="1447" />
           <entry key="Scratch" value="37" />
         </counts>
       </usages-collector>
@@ -4672,28 +4673,33 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="135" column="35" lean-forward="true" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
+            <state relative-caret-position="385">
+              <caret line="136" column="77" lean-forward="true" selection-start-line="136" selection-start-column="77" selection-end-line="136" selection-end-column="77" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
-                <marker date="1539527471171" expanded="true" signature="124:129" ph="..." />
-                <marker date="1539527471171" expanded="true" signature="1096:1097" ph="..." />
-                <marker date="1539527471171" expanded="true" signature="3205:3210" ph="..." />
-                <marker date="1539527471171" expanded="true" signature="4254:4255" ph="..." />
-                <marker date="1539527471171" expanded="true" signature="4254:4263" ph="..." />
-                <marker date="1539527471171" expanded="true" signature="4960:4965" ph="..." />
+                <marker date="1539527600923" expanded="true" signature="124:129" ph="..." />
+                <marker date="1539527600923" expanded="true" signature="1096:1097" ph="..." />
+                <marker date="1539527600923" expanded="true" signature="3205:3210" ph="..." />
+                <marker date="1539527600923" expanded="true" signature="4254:4255" ph="..." />
+                <marker date="1539527600923" expanded="true" signature="4254:4263" ph="..." />
+                <marker date="1539527600923" expanded="true" signature="5003:5008" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/32349c79-e9da-4918-938a-0171a3e742ac/console.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/sqlheper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="385">
+              <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
               <folding>
-                <marker date="1539527270658" expanded="true" signature="41:42" ph="..." />
+                <marker date="1539527643745" expanded="true" signature="41:42" ph="..." />
               </folding>
             </state>
           </provider>
@@ -4760,8 +4766,8 @@
         <option value="$PROJECT_DIR$/loginAnduser/settings.py" />
         <option value="$PROJECT_DIR$/loginAnduser/urls.py" />
         <option value="$PROJECT_DIR$/templates/edit_students.html" />
-        <option value="$PROJECT_DIR$/utils/sqlheper.py" />
         <option value="$PROJECT_DIR$/login/views.py" />
+        <option value="$PROJECT_DIR$/utils/sqlheper.py" />
       </list>
     </option>
   </component>
@@ -4771,9 +4777,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2272" />
-    <option name="y" value="81" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="2107" />
+    <option name="y" value="91" />
     <option name="width" value="1447" />
     <option name="height" value="972" />
   </component>
@@ -4809,6 +4815,17 @@
             <path>
               <item name="loginAnduser" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="loginAnduser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="loginAnduser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="32349c79-e9da-4918-938a-0171a3e742ac" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
             </path>
           </expand>
           <select />
@@ -4880,7 +4897,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2272" y="81" width="1447" height="972" extended-state="0" />
+    <frame x="2107" y="91" width="1447" height="972" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1888969" />
@@ -4896,7 +4913,7 @@
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.32841328" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32841328" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3296433" />
@@ -5136,28 +5153,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/32349c79-e9da-4918-938a-0171a3e742ac/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/sqlheper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="385">
+          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
           <folding>
-            <marker date="1539527270658" expanded="true" signature="41:42" ph="..." />
+            <marker date="1539527643745" expanded="true" signature="41:42" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="135" column="35" lean-forward="true" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
+        <state relative-caret-position="385">
+          <caret line="136" column="77" lean-forward="true" selection-start-line="136" selection-start-column="77" selection-end-line="136" selection-end-column="77" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-            <marker date="1539527471171" expanded="true" signature="124:129" ph="..." />
-            <marker date="1539527471171" expanded="true" signature="1096:1097" ph="..." />
-            <marker date="1539527471171" expanded="true" signature="3205:3210" ph="..." />
-            <marker date="1539527471171" expanded="true" signature="4254:4255" ph="..." />
-            <marker date="1539527471171" expanded="true" signature="4254:4263" ph="..." />
-            <marker date="1539527471171" expanded="true" signature="4960:4965" ph="..." />
+            <marker date="1539527600923" expanded="true" signature="124:129" ph="..." />
+            <marker date="1539527600923" expanded="true" signature="1096:1097" ph="..." />
+            <marker date="1539527600923" expanded="true" signature="3205:3210" ph="..." />
+            <marker date="1539527600923" expanded="true" signature="4254:4255" ph="..." />
+            <marker date="1539527600923" expanded="true" signature="4254:4263" ph="..." />
+            <marker date="1539527600923" expanded="true" signature="5003:5008" ph="..." />
           </folding>
         </state>
       </provider>
