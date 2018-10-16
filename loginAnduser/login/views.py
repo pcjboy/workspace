@@ -99,7 +99,8 @@ def students(request):
     conn = pymysql.connect(host='10.21.10.58', port=3306, user='login111', passwd='login111', db='login111',
                            charset='utf8')
     cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
-    cursor.execute("select login_student.id,login_student.name, login_classtable.title from login_student left JOIN login_classtable on login_student.class_id_id = login_classtable.id")
+    cursor.execute(
+        "select login_student.id,login_student.name, login_classtable.title from login_student left JOIN login_classtable on login_student.class_id_id = login_classtable.id")
     student_list = cursor.fetchall()
     cursor.close()
     conn.close()
@@ -133,5 +134,8 @@ from utils import sqlheper
 
 
 def edit_students(request):
+    nid = request.GET.get('nid')
     class_list = sqlheper.get_list("select id,title from login_classtable", [])
-    return render(request, "edit_students.html", {'class_list':  class_list})
+    current_student_info = sqlheper.get_one('select id, name, class_id_id from login_student where id=%s', [nid, ])
+    return render(request, "edit_students.html",
+                  {'class_list': class_list, 'current_student_info': current_student_info})
