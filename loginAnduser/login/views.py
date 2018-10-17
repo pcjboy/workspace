@@ -167,6 +167,6 @@ def del_students(request):
 
 def modal_add_class(request):
     title = request.POST.get('title')
-    sqlheper.modify('insert into class(title) values(%s)', [title, ])
+    sqlheper.modify('insert into login_classtable(title) values(%s)', [title, ])
     # return redirect('/classes')
     return HttpResponse('ok')

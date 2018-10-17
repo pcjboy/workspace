@@ -63,9 +63,10 @@
     </tbody>
 </table>
 
-<div class="shadow hide"></div>
+<div id='shadow' class="shadow hide"></div>
 <div id='modal' class="modal hide">
     <form action="/modal_add_class/" method="POST">
+        {% csrf_token %}
         <p>
             <input type="text" name="title">
         </p>

@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="de7665f3-501b-4d3d-b343-6a15878c8f8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loginAnduser/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/loginAnduser/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_class.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_class.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/classess.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/classess.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/edit_students.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit_students.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/students.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/students.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/sqlheper.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/sqlheper.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,16 +137,16 @@
         <counts>
           <entry key="ReadMe" value="146" />
           <entry key="cell" value="36" />
-          <entry key="html" value="1169" />
-          <entry key="py" value="2109" />
+          <entry key="html" value="1176" />
+          <entry key="py" value="2111" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1169" />
+          <entry key="HTML" value="1176" />
           <entry key="PLAIN_TEXT" value="146" />
-          <entry key="Python" value="2109" />
+          <entry key="Python" value="2111" />
           <entry key="Scratch" value="37" />
         </counts>
       </usages-collector>
@@ -170,30 +165,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="699">
-              <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+            <state relative-caret-position="276">
+              <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
               <folding>
                 <element signature="e#0#60#0" expanded="true" />
-                <marker date="1539773733518" expanded="true" signature="124:129" ph="..." />
-                <marker date="1539773733518" expanded="true" signature="1096:1097" ph="..." />
-                <marker date="1539773733518" expanded="true" signature="3348:3353" ph="..." />
-                <marker date="1539773733518" expanded="true" signature="4406:4407" ph="..." />
-                <marker date="1539773733518" expanded="true" signature="4406:4415" ph="..." />
-                <marker date="1539773733518" expanded="true" signature="5348:5357" ph="..." />
-                <marker date="1539773733518" expanded="true" signature="6328:6333" ph="..." />
+                <marker date="1539775002818" expanded="true" signature="124:129" ph="..." />
+                <marker date="1539775002818" expanded="true" signature="1096:1097" ph="..." />
+                <marker date="1539775002818" expanded="true" signature="3348:3353" ph="..." />
+                <marker date="1539775002818" expanded="true" signature="4406:4407" ph="..." />
+                <marker date="1539775002818" expanded="true" signature="4406:4415" ph="..." />
+                <marker date="1539775002818" expanded="true" signature="5348:5357" ph="..." />
+                <marker date="1539775002818" expanded="true" signature="6328:6333" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/classess.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+            <state relative-caret-position="181">
+              <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
               <folding>
                 <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -204,8 +199,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/add_class.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="190">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -235,7 +230,7 @@
         <entry file="file://$PROJECT_DIR$/loginAnduser/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+              <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
               <folding>
                 <element signature="e#636#668#0" expanded="true" />
               </folding>
@@ -282,8 +277,8 @@
         <option value="$PROJECT_DIR$/utils/sqlheper.py" />
         <option value="$PROJECT_DIR$/templates/edit_students.html" />
         <option value="$PROJECT_DIR$/templates/add_class.html" />
-        <option value="$PROJECT_DIR$/loginAnduser/urls.py" />
         <option value="$PROJECT_DIR$/templates/classess.html" />
+        <option value="$PROJECT_DIR$/loginAnduser/urls.py" />
         <option value="$PROJECT_DIR$/login/views.py" />
       </list>
     </option>
@@ -295,8 +290,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1946" />
-    <option name="y" value="11" />
+    <option name="x" value="2490" />
+    <option name="y" value="17" />
     <option name="width" value="1175" />
     <option name="height" value="958" />
   </component>
@@ -673,15 +668,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/add_class.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="190">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/classess.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+          <folding>
+            <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/loginAnduser/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
           <folding>
             <element signature="e#636#668#0" expanded="true" />
           </folding>
@@ -690,27 +695,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+        <state relative-caret-position="276">
+          <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
           <folding>
             <element signature="e#0#60#0" expanded="true" />
-            <marker date="1539773733518" expanded="true" signature="124:129" ph="..." />
-            <marker date="1539773733518" expanded="true" signature="1096:1097" ph="..." />
-            <marker date="1539773733518" expanded="true" signature="3348:3353" ph="..." />
-            <marker date="1539773733518" expanded="true" signature="4406:4407" ph="..." />
-            <marker date="1539773733518" expanded="true" signature="4406:4415" ph="..." />
-            <marker date="1539773733518" expanded="true" signature="5348:5357" ph="..." />
-            <marker date="1539773733518" expanded="true" signature="6328:6333" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/classess.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-          <folding>
-            <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
+            <marker date="1539775002818" expanded="true" signature="124:129" ph="..." />
+            <marker date="1539775002818" expanded="true" signature="1096:1097" ph="..." />
+            <marker date="1539775002818" expanded="true" signature="3348:3353" ph="..." />
+            <marker date="1539775002818" expanded="true" signature="4406:4407" ph="..." />
+            <marker date="1539775002818" expanded="true" signature="4406:4415" ph="..." />
+            <marker date="1539775002818" expanded="true" signature="5348:5357" ph="..." />
+            <marker date="1539775002818" expanded="true" signature="6328:6333" ph="..." />
           </folding>
         </state>
       </provider>
