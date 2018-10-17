@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de7665f3-501b-4d3d-b343-6a15878c8f8a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Ajaxdemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cnblog/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ajaxdemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ajaxdemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnblog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cnblog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnblog/static/js/jquery-3.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/jquery-3.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/classess.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/classess.html" afterDir="false" />
     </list>
@@ -110,7 +118,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="ReadMe" value="2" />
+          <entry key="ReadMe" value="3" />
           <entry key="django_content_type" value="1" />
           <entry key="django_migrations" value="1" />
           <entry key="django_session" value="1" />
@@ -127,7 +135,7 @@
         <counts>
           <entry key="Database Element" value="35" />
           <entry key="HTML" value="10" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="Python" value="10" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="8" />
@@ -135,18 +143,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="ReadMe" value="146" />
+          <entry key="ReadMe" value="519" />
           <entry key="cell" value="36" />
-          <entry key="html" value="1176" />
-          <entry key="py" value="2111" />
+          <entry key="html" value="1502" />
+          <entry key="py" value="2189" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1176" />
-          <entry key="PLAIN_TEXT" value="146" />
-          <entry key="Python" value="2111" />
+          <entry key="HTML" value="1502" />
+          <entry key="PLAIN_TEXT" value="519" />
+          <entry key="Python" value="2189" />
           <entry key="Scratch" value="37" />
         </counts>
       </usages-collector>
@@ -160,25 +168,25 @@
         <entry file="file://$PROJECT_DIR$/templates/students.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
+            <state relative-caret-position="333">
+              <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
               <folding>
                 <element signature="e#0#60#0" expanded="true" />
-                <marker date="1539775002818" expanded="true" signature="124:129" ph="..." />
-                <marker date="1539775002818" expanded="true" signature="1096:1097" ph="..." />
-                <marker date="1539775002818" expanded="true" signature="3348:3353" ph="..." />
-                <marker date="1539775002818" expanded="true" signature="4406:4407" ph="..." />
-                <marker date="1539775002818" expanded="true" signature="4406:4415" ph="..." />
-                <marker date="1539775002818" expanded="true" signature="5348:5357" ph="..." />
-                <marker date="1539775002818" expanded="true" signature="6328:6333" ph="..." />
+                <marker date="1539778857365" expanded="true" signature="124:129" ph="..." />
+                <marker date="1539778857365" expanded="true" signature="1096:1097" ph="..." />
+                <marker date="1539778857365" expanded="true" signature="3348:3353" ph="..." />
+                <marker date="1539778857365" expanded="true" signature="4406:4407" ph="..." />
+                <marker date="1539778857365" expanded="true" signature="4406:4415" ph="..." />
+                <marker date="1539778857365" expanded="true" signature="5348:5357" ph="..." />
+                <marker date="1539778857365" expanded="true" signature="6328:6333" ph="..." />
               </folding>
             </state>
           </provider>
@@ -187,11 +195,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/classess.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
-              <folding>
-                <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="297">
+              <caret line="81" column="28" lean-forward="true" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReadMe">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -209,7 +223,7 @@
         <entry file="file://$PROJECT_DIR$/utils/sqlheper.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding>
                 <marker date="1539755593671" expanded="true" signature="41:42" ph="..." />
               </folding>
@@ -221,7 +235,7 @@
         <entry file="file://$PROJECT_DIR$/templates/edit_students.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -268,7 +282,6 @@
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/login/models.py" />
         <option value="$PROJECT_DIR$/templates/edit_class.html" />
-        <option value="$PROJECT_DIR$/ReadMe" />
         <option value="$PROJECT_DIR$/templates/add_student.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ab9a77d1-da12-494a-8576-06807d44c2a3/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a4cfbe50-3431-4429-81c4-f12b7d2c4e42/console.sql" />
@@ -277,9 +290,10 @@
         <option value="$PROJECT_DIR$/utils/sqlheper.py" />
         <option value="$PROJECT_DIR$/templates/edit_students.html" />
         <option value="$PROJECT_DIR$/templates/add_class.html" />
-        <option value="$PROJECT_DIR$/templates/classess.html" />
         <option value="$PROJECT_DIR$/loginAnduser/urls.py" />
         <option value="$PROJECT_DIR$/login/views.py" />
+        <option value="$PROJECT_DIR$/templates/classess.html" />
+        <option value="$PROJECT_DIR$/ReadMe" />
       </list>
     </option>
   </component>
@@ -290,8 +304,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2490" />
-    <option name="y" value="17" />
+    <option name="x" value="1933" />
+    <option name="y" value="14" />
     <option name="width" value="1175" />
     <option name="height" value="958" />
   </component>
@@ -318,6 +332,11 @@
               <item name="loginAnduser" type="b2602c69:ProjectViewProjectNode" />
               <item name="loginAnduser" type="462c0819:PsiDirectoryNode" />
               <item name="loginAnduser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loginAnduser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loginAnduser" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="loginAnduser" type="b2602c69:ProjectViewProjectNode" />
@@ -357,10 +376,15 @@
     <property name="SearchEverywhereHistoryKey" value="loginuser&#9;FILE&#9;das://ab07b7c2-cae9-4b55-b378-fcb07b38dd99/schema/loginall/table/login_userinfo" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv/Scripts/python.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cnblog" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\project\workspace\loginAnduser\static" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -414,15 +438,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1946" y="11" width="1175" height="958" extended-state="0" />
+    <frame x="2030" y="19" width="1175" height="958" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23497757" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23497757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3066333" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3066333" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -503,13 +527,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReadMe">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -645,14 +662,14 @@
     <entry file="file://$PROJECT_DIR$/templates/students.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/sqlheper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding>
             <marker date="1539755593671" expanded="true" signature="41:42" ph="..." />
           </folding>
@@ -662,7 +679,7 @@
     <entry file="file://$PROJECT_DIR$/templates/edit_students.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -670,16 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/classess.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
-          <folding>
-            <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -695,18 +702,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
+        <state relative-caret-position="333">
+          <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
           <folding>
             <element signature="e#0#60#0" expanded="true" />
-            <marker date="1539775002818" expanded="true" signature="124:129" ph="..." />
-            <marker date="1539775002818" expanded="true" signature="1096:1097" ph="..." />
-            <marker date="1539775002818" expanded="true" signature="3348:3353" ph="..." />
-            <marker date="1539775002818" expanded="true" signature="4406:4407" ph="..." />
-            <marker date="1539775002818" expanded="true" signature="4406:4415" ph="..." />
-            <marker date="1539775002818" expanded="true" signature="5348:5357" ph="..." />
-            <marker date="1539775002818" expanded="true" signature="6328:6333" ph="..." />
+            <marker date="1539778857365" expanded="true" signature="124:129" ph="..." />
+            <marker date="1539778857365" expanded="true" signature="1096:1097" ph="..." />
+            <marker date="1539778857365" expanded="true" signature="3348:3353" ph="..." />
+            <marker date="1539778857365" expanded="true" signature="4406:4407" ph="..." />
+            <marker date="1539778857365" expanded="true" signature="4406:4415" ph="..." />
+            <marker date="1539778857365" expanded="true" signature="5348:5357" ph="..." />
+            <marker date="1539778857365" expanded="true" signature="6328:6333" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/classess.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="81" column="28" lean-forward="true" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadMe">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
         </state>
       </provider>
     </entry>

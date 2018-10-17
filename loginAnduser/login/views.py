@@ -167,6 +167,11 @@ def del_students(request):
 
 def modal_add_class(request):
     title = request.POST.get('title')
-    sqlheper.modify('insert into login_classtable(title) values(%s)', [title, ])
-    # return redirect('/classes')
-    return HttpResponse('ok')
+    if len(title) > 0:
+        sqlheper.modify('insert into login_classtable(title) values(%s)', [title, ])
+        # return redirect('/classes')
+        return HttpResponse('ok')
+
+    else:
+        # 页面不要刷新，提示错误信息
+        return HttpResponse('班级标题不能为空')
