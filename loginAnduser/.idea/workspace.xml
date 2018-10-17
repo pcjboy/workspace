@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="de7665f3-501b-4d3d-b343-6a15878c8f8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/login/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loginAnduser/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/loginAnduser/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_class.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_class.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/classess.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/classess.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/edit_students.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit_students.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/students.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/students.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/sqlheper.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/sqlheper.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +119,7 @@
           <entry key="django_content_type" value="1" />
           <entry key="django_migrations" value="1" />
           <entry key="django_session" value="1" />
-          <entry key="html" value="6" />
+          <entry key="html" value="10" />
           <entry key="login_classtable" value="10" />
           <entry key="login_student" value="16" />
           <entry key="login_teacher" value="5" />
@@ -125,7 +131,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="35" />
-          <entry key="HTML" value="6" />
+          <entry key="HTML" value="10" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="10" />
           <entry key="SQL" value="2" />
@@ -136,16 +142,16 @@
         <counts>
           <entry key="ReadMe" value="146" />
           <entry key="cell" value="36" />
-          <entry key="html" value="587" />
-          <entry key="py" value="1564" />
+          <entry key="html" value="1169" />
+          <entry key="py" value="2109" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="587" />
+          <entry key="HTML" value="1169" />
           <entry key="PLAIN_TEXT" value="146" />
-          <entry key="Python" value="1564" />
+          <entry key="Python" value="2109" />
           <entry key="Scratch" value="37" />
         </counts>
       </usages-collector>
@@ -158,42 +164,59 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/students.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="190">
+              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="699">
+              <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+              <folding>
+                <element signature="e#0#60#0" expanded="true" />
+                <marker date="1539773733518" expanded="true" signature="124:129" ph="..." />
+                <marker date="1539773733518" expanded="true" signature="1096:1097" ph="..." />
+                <marker date="1539773733518" expanded="true" signature="3348:3353" ph="..." />
+                <marker date="1539773733518" expanded="true" signature="4406:4407" ph="..." />
+                <marker date="1539773733518" expanded="true" signature="4406:4415" ph="..." />
+                <marker date="1539773733518" expanded="true" signature="5348:5357" ph="..." />
+                <marker date="1539773733518" expanded="true" signature="6328:6333" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/login/views.py">
+        <entry file="file://$PROJECT_DIR$/templates/classess.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="135" column="27" lean-forward="true" selection-start-line="135" selection-start-column="27" selection-end-line="135" selection-end-column="27" />
+            <state relative-caret-position="200">
+              <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
               <folding>
-                <element signature="e#0#59#0" expanded="true" />
-                <marker date="1539688754294" expanded="true" signature="124:129" ph="..." />
-                <marker date="1539688754294" expanded="true" signature="1096:1097" ph="..." />
-                <marker date="1539688754294" expanded="true" signature="3205:3210" ph="..." />
-                <marker date="1539688754294" expanded="true" signature="4263:4264" ph="..." />
-                <marker date="1539688754294" expanded="true" signature="4263:4272" ph="..." />
-                <marker date="1539688754294" expanded="true" signature="5161:5166" ph="..." />
+                <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/32349c79-e9da-4918-938a-0171a3e742ac/console.sql">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/templates/add_class.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/sqlheper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+            <state relative-caret-position="162">
+              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
               <folding>
-                <marker date="1539527643745" expanded="true" signature="41:42" ph="..." />
+                <marker date="1539755593671" expanded="true" signature="41:42" ph="..." />
               </folding>
             </state>
           </provider>
@@ -202,8 +225,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/edit_students.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="38">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -211,8 +234,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/loginAnduser/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            <state relative-caret-position="352">
+              <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
               <folding>
                 <element signature="e#636#668#0" expanded="true" />
               </folding>
@@ -249,18 +272,18 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/login/models.py" />
-        <option value="$PROJECT_DIR$/templates/add_class.html" />
-        <option value="$PROJECT_DIR$/templates/classess.html" />
         <option value="$PROJECT_DIR$/templates/edit_class.html" />
         <option value="$PROJECT_DIR$/ReadMe" />
-        <option value="$PROJECT_DIR$/templates/students.html" />
         <option value="$PROJECT_DIR$/templates/add_student.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ab9a77d1-da12-494a-8576-06807d44c2a3/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a4cfbe50-3431-4429-81c4-f12b7d2c4e42/console.sql" />
         <option value="$PROJECT_DIR$/loginAnduser/settings.py" />
-        <option value="$PROJECT_DIR$/loginAnduser/urls.py" />
-        <option value="$PROJECT_DIR$/templates/edit_students.html" />
+        <option value="$PROJECT_DIR$/templates/students.html" />
         <option value="$PROJECT_DIR$/utils/sqlheper.py" />
+        <option value="$PROJECT_DIR$/templates/edit_students.html" />
+        <option value="$PROJECT_DIR$/templates/add_class.html" />
+        <option value="$PROJECT_DIR$/loginAnduser/urls.py" />
+        <option value="$PROJECT_DIR$/templates/classess.html" />
         <option value="$PROJECT_DIR$/login/views.py" />
       </list>
     </option>
@@ -272,9 +295,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1997" />
-    <option name="y" value="49" />
-    <option name="width" value="1549" />
+    <option name="x" value="1946" />
+    <option name="y" value="11" />
+    <option name="width" value="1175" />
     <option name="height" value="958" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -300,6 +323,11 @@
               <item name="loginAnduser" type="b2602c69:ProjectViewProjectNode" />
               <item name="loginAnduser" type="462c0819:PsiDirectoryNode" />
               <item name="loginAnduser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="loginAnduser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="loginAnduser" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="loginAnduser" type="b2602c69:ProjectViewProjectNode" />
@@ -391,15 +419,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1997" y="49" width="1549" height="958" extended-state="0" />
+    <frame x="1946" y="11" width="1175" height="958" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17595702" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23497757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3066333" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3066333" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -417,7 +445,7 @@
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="R Packages" order="5" />
-      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.1699127" />
+      <window_info anchor="right" id="Database" order="6" weight="0.1699127" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,20 +487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/add_class.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="34" lean-forward="true" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/classess.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -554,13 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/add_student.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://a4cfbe50-3431-4429-81c4-f12b7d2c4e42/schema/loginuser/table/login_classtable">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -623,42 +630,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/students.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loginAnduser/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding>
-            <element signature="e#636#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/edit_students.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/32349c79-e9da-4918-938a-0171a3e742ac/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/sqlheper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding>
-            <marker date="1539527643745" expanded="true" signature="41:42" ph="..." />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="das://32349c79-e9da-4918-938a-0171a3e742ac/schema/login111/table/login_student">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -667,18 +640,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="7" lean-forward="true" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/students.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/sqlheper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <marker date="1539755593671" expanded="true" signature="41:42" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/edit_students.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loginAnduser/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding>
+            <element signature="e#636#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/login/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="135" column="27" lean-forward="true" selection-start-line="135" selection-start-column="27" selection-end-line="135" selection-end-column="27" />
+        <state relative-caret-position="699">
+          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
-            <marker date="1539688754294" expanded="true" signature="124:129" ph="..." />
-            <marker date="1539688754294" expanded="true" signature="1096:1097" ph="..." />
-            <marker date="1539688754294" expanded="true" signature="3205:3210" ph="..." />
-            <marker date="1539688754294" expanded="true" signature="4263:4264" ph="..." />
-            <marker date="1539688754294" expanded="true" signature="4263:4272" ph="..." />
-            <marker date="1539688754294" expanded="true" signature="5161:5166" ph="..." />
+            <element signature="e#0#60#0" expanded="true" />
+            <marker date="1539773733518" expanded="true" signature="124:129" ph="..." />
+            <marker date="1539773733518" expanded="true" signature="1096:1097" ph="..." />
+            <marker date="1539773733518" expanded="true" signature="3348:3353" ph="..." />
+            <marker date="1539773733518" expanded="true" signature="4406:4407" ph="..." />
+            <marker date="1539773733518" expanded="true" signature="4406:4415" ph="..." />
+            <marker date="1539773733518" expanded="true" signature="5348:5357" ph="..." />
+            <marker date="1539773733518" expanded="true" signature="6328:6333" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/classess.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+          <folding>
+            <element signature="n#table#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>

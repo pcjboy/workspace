@@ -10,7 +10,7 @@
     <form action="" method="POST">
         {% csrf_token %}
         <p>班级: <input type="text" name="title"></p>
-        <input type="submit" value="提交">
+        <input type="submit" value="提交"> {{ msg }}
     </form>
 </body>
 </html>

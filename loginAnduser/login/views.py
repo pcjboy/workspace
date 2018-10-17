@@ -42,14 +42,17 @@ def add_class(request):
     else:
         # print(request.POST)
         v = request.POST.get('title')
-        conn = pymysql.connect(host='10.21.10.58', port=3306, user='login111', passwd='login111', db='login111',
-                               charset='utf8')
-        cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
-        cursor.execute("insert into login_classtable(title) values (%s)", [v, ])
-        conn.commit()
-        cursor.close()
-        conn.close()
-        return redirect('/classes/')
+        if len(v) > 0:
+            conn = pymysql.connect(host='10.21.10.58', port=3306, user='login111', passwd='login111', db='login111',
+                                   charset='utf8')
+            cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+            cursor.execute("insert into login_classtable(title) values (%s)", [v, ])
+            conn.commit()
+            cursor.close()
+            conn.close()
+            return redirect('/classes/')
+        else:
+            return render(request, 'add_class.html', {'msg': '班级与名称不为空'})
 
 
 def del_class(request):
@@ -134,8 +137,36 @@ from utils import sqlheper
 
 
 def edit_students(request):
+    if request.method == "GET":
+        nid = request.GET.get('nid')
+        class_list = sqlheper.get_list("select id,title from login_classtable", [])
+        current_student_info = sqlheper.get_one('select id, name, class_id_id from login_student where id=%s', [nid, ])
+        return render(request, "edit_students.html",
+                      {'class_list': class_list, 'current_student_info': current_student_info})
+    else:
+        nid = request.GET.get('nid')
+        name = request.POST.get('name')
+        class_id = request.POST.get('class_id')
+        sqlheper.modify('update login_student set name=%s, class_id_id=%s where id=%s', [name, class_id, nid])
+        return redirect('/students/')
+
+
+def del_students(request):
     nid = request.GET.get('nid')
-    class_list = sqlheper.get_list("select id,title from login_classtable", [])
-    current_student_info = sqlheper.get_one('select id, name, class_id_id from login_student where id=%s', [nid, ])
-    return render(request, "edit_students.html",
-                  {'class_list': class_list, 'current_student_info': current_student_info})
+    conn = pymysql.connect(host='10.21.10.58', port=3306, user='login111', passwd='login111', db='login111',
+                           charset='utf8')
+    cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
+    cursor.execute("delete from login_student where id=(%s)", [nid, ])
+    conn.commit()
+    cursor.close()
+    conn.close()
+    return redirect('/students/')
+
+
+# ############################### 对话框 ##########################################
+
+def modal_add_class(request):
+    title = request.POST.get('title')
+    sqlheper.modify('insert into class(title) values(%s)', [title, ])
+    # return redirect('/classes')
+    return HttpResponse('ok')
