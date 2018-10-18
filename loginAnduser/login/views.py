@@ -175,3 +175,16 @@ def modal_add_class(request):
     else:
         # 页面不要刷新，提示错误信息
         return HttpResponse('班级标题不能为空')
+
+
+def modal_edit_class(request):
+    ret = {'status': True, 'messagge': None}
+    try:
+        nid = request.POST.get('nid')
+        content = request.POST.get('content')
+        sqlheper.modify('update login_classtable set title=%s where id=%s', [content, nid, ])
+    except Exception as e:
+        ret['status'] = False
+        ret['messagge'] = '处理异常'
+    import json
+    return HttpResponse(json.dumps(ret))

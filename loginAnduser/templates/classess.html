@@ -55,6 +55,9 @@
             <td>
                 <a href="/edit_class/?nid={{ row.id }}">编辑</a>
                 ｜
+{#                <a href="http://www.baidu.com" onclick="return modelEdit();">对话框编辑</a>#}
+                <a onclick="modelEdit(this);">对话框编辑</a>
+                ｜
                 <a href="/del_class/?nid={{ row.id }}">删除</a>
             </td>
         </tr>
@@ -74,6 +77,21 @@
         <input type="button" value="取消" onclick="cancleModal();">
     </form>
 </div>
+
+<div id='editmodal' class="modal hide">
+    <h3>编辑框</h3>
+    <form action="/modal_add_class/" method="POST">
+        {% csrf_token %}
+        <p>
+            <input id='editid' type="text" name="id" style="display: none">
+            <input id='editTitle' type="text" name="title">
+        </p>
+        <input type="button" value="提交" onclick="editAjaxSend();"><span id="errormsg"></span>
+        <input type="button" value="取消" onclick="cancleModal();">
+    </form>
+</div>
+
+<script src="/static/jquery-3.3.1.min.js"></script>
 <script>
     function showModal() {
         document.getElementById('shadow').classList.remove('hide');
@@ -102,6 +120,45 @@
 
             }
         })
+    }
+    function modelEdit(ths){
+        document.getElementById('shadow').classList.remove('hide');
+        document.getElementById('editmodal').classList.remove('hide');
+        /*
+         1、 获取当前点击标签
+         2、 当前标签父标签，再找其上方标签
+         3、 获取当前行班级名称，赋值到编辑对话框中
+         */
+        var row = $(ths).parent().prevAll();
+        var content = $(row[0]).text();
+        $('#editTitle').val(content);
+
+        var contentId = $(row[1]).text();
+        $('#editid').val(contentId);
+    }
+    function editAjaxSend(){
+        var nid = $('#editid').val();
+        var content = $('#editTitle').val();
+
+        $.ajax({
+           url:'/modal_edit_class/',
+           type: 'POST',
+           data: {'nid':nid, 'content':content},
+            success:function (arg) {
+               // arg 字符串类型
+                // JSON.parse(字符串) ＝〉 对象
+                 // JSON stringfy (对象)  => 字符串
+                arg = JSON.parse(arg);
+                if(arg.status){
+                    {#location.href = '/classes'#}
+                    location.reload();
+                }else{
+                    alert(arg.message)
+                }
+                console.log(arg);
+            }
+        });
+        console.log(nid, content);
     }
 </script>
 </body>

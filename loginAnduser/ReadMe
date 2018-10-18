@@ -47,7 +47,80 @@ http://www.cnblogs.com/wupeiqi/articles/5713330.html
     内容：
         1、 对话框
              表单
+                - 添加
+                - 编辑
+                - 删除
              一对多
         2、 多对多
         3、Bootstrap
         4、fontawesome
+
+内容回顾：
+    1、WEB框架本质
+        浏览器（socket客户端）
+            2、发送IP和端口  http://www.baidu.com:80/index/
+                GET:
+                    请求头
+                        http 1.1 /index?p=123
+                        ...
+                    请求体（无内容）
+                POST：
+                    请求头
+                        http 1.1 /index?p=123
+                        ...
+                    请求体
+                        ...
+        服务器（socket服务端）
+            1、启动并监听IP和端口，等待用户连接
+            3、接收请求进行处理，并返回
+                    普通返回：
+                        响应头：
+
+                        响应体：
+                            <html>
+                                ....
+                            </html>
+                    重定向返回：
+                        响应头：
+    2、DjangoWEB框架
+        a 创建Project
+            django-admin  startproject mysite
+
+        b 配置
+            模板
+            静态文件
+            csrf
+
+        c 路由关系
+            url -> 函数
+
+        d 视图函数
+            def index(request):
+                request.method
+                request.GET
+                request.POST
+
+                return redirect('URL')
+                return render(request,'模板路径',{} )
+                return HttpResponse('字符串')
+                # 1 获取模板 + 数据， 渲染
+                # 2 HttpReponse(....)
+        e 模板渲染
+            {{k1}}
+            {{k2.0}}
+            {% for i in result %}
+                {{ i }}
+            {% endfor %}
+
+            {% if 1>2 %}
+            {% endif %}
+
+    3、Ajax(jQuery)
+        $.jaxx({
+            url: '',
+            type: 'GET',
+            data: {k1:'v1}
+            success: function(arg){
+
+            }
+        })
