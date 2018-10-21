@@ -1,0 +1,167 @@
+
+运维愿景：
+	1 自动装机
+	2 配置管理
+	3 监控
+	4 堡垒机
+	
+目前状况：
+	手动维护EXcel 表格
+	资产自动采集并汇报入库
+	
+	CMDB - 配置管理数据库（资产管理）
+	
+如何实现自动采集？
+	subprocess
+	Linux 基本命令
+	v = subprocess.getoutput('ls')
+	
+	1. Agetn
+	2. paramiko
+		pip3 install paramiko
+	3. saltstack Python 开发
+		master
+			yum install salt-master
+			service salt-master start
+		slave
+			yum install salt-minion
+			service salt-? start
+	4. puppet(ruby)
+
+机器少的场境		
+ssh方式   -- paramiko
+	- fabric
+	- ansible
+	
+目标: 兼容三种 采集方式软件
+
+任务： 
+	1、Agetn 方式
+		API: Django 接收数据并入库
+		程序： 放置在每台服务器
+	2、SSH类：
+		API： Django 接收数据并入库
+		程序： 放在中控机
+	3、saltstack
+		两上虚拟机：
+			master
+			minion
+			配置
+				...
+			授权
+				...
+		
+##################################################
+CMDB 资产管理： 资产采集（1/3）
+	- 采集资产： 执行命令， 正则或字符串方法获取想要数据
+	- 兼容性
+	- 汇报数据
+
+前戏：
+	反射：  getattr(obj, 'xxx')
+	导入模块： 
+		import re
+		'django.middleware.clickjacking.XFrameOptionsMiddleware'
+		m = importlib.import_module('django.middleware.clickjacking')
+		cls = getattr(m, 'XFrameOptionsMiddleware')
+		cls()
+		
+	面向对象：
+		class Foo:
+			def __init__(self,xx):
+				pass
+				
+			@classmethod
+			def instance(cls):
+				return cls()
+			
+			def process(self):
+				pass
+		if hasattr(Foo, 'instance'):
+			obj =  Foo.instance()
+		else:
+			obj = Foo()
+		obj.process()
+		
+		
+		class A:
+			def f1(self):
+				self.f2()
+			def f2(self):
+				print('A.f2')
+		class B(A):
+			def f2(self):
+				print("B.f2")
+				
+		obj = B()
+		obj.f1()
+		
+开始
+	1 目录
+		bin
+		config
+		lib
+		src
+		
+	2 配置文件
+		只地用户定义：
+			settings.py
+				USER = 'root'
+				PWD = "sdsdf"
+		支持用户定义：
+			settings.py
+				USER = 'root'
+				PWD = "sdsdf"
+		from lib.conf.config import settings
+		
+		PS:
+			import os
+			os.environp['USER_SETTINGS'] = "config.settings"
+	3 开发插件
+		公司采集资产有差别
+		默认采集：
+			basic
+			board
+			cpu
+			disk
+			memory
+			nic
+			
+		定义插件：
+			class xxx(object):
+				def process(self):
+					return '1231222123'
+		写配置文件：
+			PLUGINS_DICT = {
+				...
+				'xxx,: "xxx.xxx.xxx.xxx",
+			}
+###################################################################
+		AGENT:
+			向API发送资产信息
+			
+		SSH、SALT:
+			获取未采集的主机列表： [c1.com,c2.com]
+			for host in 主机列表：
+				host采集资产，发磅到API
+				
+		class Base(obj):
+			def post_asset(self,server_info):
+				向API发送资产信息
+		
+		class Agent(Base):
+			def execute(self):
+				server_info = pluginManager().exec_plugin()
+				self.post_asset(server_info)
+				
+		class SSHSALT(Base):
+			def get_host(self):
+				# 获取来采集的主机列表：
+				return [c1.com,c2.com]
+				
+			def execute(self):
+				host_list = self.get_host()
+				for host in host_list:
+					server_inof = PluginManager(host).exec_plugin()
+					self.post_asset(server_info)
+					

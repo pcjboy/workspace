@@ -1,0 +1,4 @@
+
+
+class Disk(object):
+    pass
