@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a93dfb97-0bd9-4c73-b625-f42abe9f7aa0" name="Default Changelist" comment="" />
+    <list default="true" id="a93dfb97-0bd9-4c73-b625-f42abe9f7aa0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/views.py" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/autoclient/bin/start.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -129,7 +144,7 @@
         <entry file="file://$PROJECT_DIR$/autoclient/src/client.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <marker date="1540130802395" expanded="true" signature="192:197" ph="..." />
@@ -239,7 +254,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="2187" />
     <option name="y" value="88" />
     <option name="width" value="1502" />
@@ -259,17 +274,6 @@
               <item name="autoclient" type="b2602c69:ProjectViewProjectNode" />
               <item name="autoclient" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="autoclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autoclient" type="462c0819:PsiDirectoryNode" />
-              <item name="autoclient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autoclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autoclient" type="462c0819:PsiDirectoryNode" />
-              <item name="autoclient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -286,6 +290,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\project\workspace\autoclient\autoclient" />
       <recent name="F:\workspace\autoclient" />
       <recent name="F:\workspace\autoclient\autoclient\lib\conf" />
       <recent name="F:\workspace\autoclient\autoclient\lib" />
@@ -422,12 +427,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2187" y="88" width="1502" height="958" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19764216" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19764216" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32916147" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32916147" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="4" />
@@ -585,14 +591,14 @@
     <entry file="file://$PROJECT_DIR$/autoclient/bin/start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/autoclient/src/client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <marker date="1540130802395" expanded="true" signature="192:197" ph="..." />
