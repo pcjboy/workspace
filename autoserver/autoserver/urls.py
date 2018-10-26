@@ -14,8 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, url, include
+from django.conf.urls import url, include
+from api import views
 
 urlpatterns = [
-    path('api/', ),
+    url(r'asset.html$', views.aseet),
 ]

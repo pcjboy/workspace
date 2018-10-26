@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a93dfb97-0bd9-4c73-b625-f42abe9f7aa0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../autoserver/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../autoserver/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../autoserver/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../autoserver/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../autoserver/autoserver/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../autoserver/autoserver/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +58,7 @@
     <session id="1363310285">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -143,8 +133,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/autoclient/src/client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="114">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <marker date="1540130802395" expanded="true" signature="192:197" ph="..." />
@@ -255,10 +245,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="2187" />
-    <option name="y" value="88" />
-    <option name="width" value="1502" />
-    <option name="height" value="958" />
+    <option name="x" value="2007" />
+    <option name="y" value="56" />
+    <option name="width" value="1187" />
+    <option name="height" value="898" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -426,14 +416,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2187" y="88" width="1502" height="958" extended-state="0" />
+    <frame x="2007" y="56" width="1187" height="898" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19764216" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16681455" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32916147" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.35588634" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="4" />
@@ -597,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/autoclient/src/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="114">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <marker date="1540130802395" expanded="true" signature="192:197" ph="..." />
