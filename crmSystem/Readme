@@ -1,0 +1,37 @@
+https://www.cnblogs.com/wupeiqi/articles/9178982.html
+目标： crm系统
+        - 权限
+        - stark 组件
+        - crm 业务
+
+步骤：
+    1、创建django project, crmSystem
+    2、两个app
+        - rbac  权限组件
+        - web   销售管理系统
+    3、app: rbac
+        - 将权限相关的表编写到此app的models.py中
+    4、app: web
+        - 将销售管理系统表写到此app的models.py中
+    5、两个app的整合
+        销售管理系统中的URL：
+            客户管理
+                客户列表: /customer/list/
+                添加客户: /customer/add/
+                删除客户: /customer/list/(?P<cid>\d+)/
+                修改客户: /customer/edit/(?P<cid>\d+)/
+                批量导入: /customer/import/
+                下载模板: /customer/tpl/
+            账单管理
+                账单列表: /payment/list/
+                添加账单: /payment/add/
+                删除账单: /payment/del/(?P<pid>\d+)/
+                修改账单: /payment/ediit/<?P<pid>\d+/
+
+        5、1 基于admin进行权限信息的录入
+        5、2 基于admin进行权限和角色信息的分配
+    6、 快速完成一个基本权限控制
+        1、登陆页面是否有权限访问
+        2、POST讲法，用户登录检验是否合法
+        3、获取当前用户相关的所有权限并放入session.
+        4、再次向服务端发起请求， http://www.xxx.com/xxx, 后端编写中间件对用户当前访问的url进行权限 折判断（是否在session中）
