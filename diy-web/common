@@ -1,9 +1,0 @@
-
-创建项目
-django-admin.py startproject mysites
-
-应用
-python manage.py startapp blog
-
-启动
-python manage.py runserver 0:8888
