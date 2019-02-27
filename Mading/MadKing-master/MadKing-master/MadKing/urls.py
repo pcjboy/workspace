@@ -15,14 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from assets import rest_urls,urls as asset_urls
+from assets import rest_urls, urls as asset_urls
 from MadKing import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^api/', include(rest_urls) ),
-    url(r'^asset/',include(asset_urls)),
-    url(r'^$',views.index,name="dashboard"),
-    url(r'^login/$',views.acc_login,name='login'),
+    url(r'^api/', include(rest_urls)),
+    url(r'^asset/', include(asset_urls)),
+    url(r'^$', views.index, name="dashboard"),
+    url(r'^login/$', views.acc_login, name='login'),
 
 ]

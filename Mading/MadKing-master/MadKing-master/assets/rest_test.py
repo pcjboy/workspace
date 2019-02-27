@@ -1,8 +1,6 @@
-#_*_coding:utf-8_*_
+# _*_coding:utf-8_*_
 from rest_framework import serializers
 from assets import models
-
-
 
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -17,8 +15,7 @@ from rest_framework.response import Response
 class SnippetSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.EventLog
-        fields = ('id','user','name', 'event_type', 'detail', 'asset', 'date', 'memo')
-
+        fields = ('id', 'user', 'name', 'event_type', 'detail', 'asset', 'date', 'memo')
 
 
 # @csrf_exempt
@@ -40,9 +37,6 @@ class SnippetSerializer(serializers.ModelSerializer):
 #         return JsonResponse(serializer.errors, status=400)
 
 
-
-
-
 @api_view(['GET', 'POST'])
 def eventlog_list(request):
     """
@@ -54,7 +48,7 @@ def eventlog_list(request):
         return Response(serializer.data)
 
     elif request.method == 'POST':
-        print("request",request.data)
+        print("request", request.data)
         serializer = SnippetSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
