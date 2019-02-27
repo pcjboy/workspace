@@ -24,20 +24,20 @@ class Asset(models.Model):
     asset_type = models.CharField(choices=asset_type_choices, max_length=64, default='server')
     name = models.CharField(max_length=64, unique=True)
     sn = models.CharField(u'资产SN号', max_length=128, unique=True)
-    manufactory = models.ForeignKey('Manufactory', verbose_name=u'制造商', null=True, blank=True)
+    manufactory = models.ForeignKey('Manufactory', verbose_name=u'制造商', null=True, blank=True, on_delete=models.CASCADE)
     # model = models.ForeignKey('ProductModel', verbose_name=u'型号')
     # model = models.CharField(u'型号',max_length=128,null=True, blank=True )
 
     management_ip = models.GenericIPAddressField(u'管理IP', blank=True, null=True)
 
-    contract = models.ForeignKey('Contract', verbose_name=u'合同', null=True, blank=True)
+    contract = models.ForeignKey('Contract', verbose_name=u'合同', null=True, blank=True, on_delete=models.CASCADE)
     trade_date = models.DateField(u'购买时间', null=True, blank=True)
     expire_date = models.DateField(u'过保修期', null=True, blank=True)
     price = models.FloatField(u'价格', null=True, blank=True)
-    business_unit = models.ForeignKey('BusinessUnit', verbose_name=u'所属业务线', null=True, blank=True)
+    business_unit = models.ForeignKey('BusinessUnit', verbose_name=u'所属业务线', null=True, blank=True, on_delete=models.CASCADE)
     tags = models.ManyToManyField('Tag', blank=True)
-    admin = models.ForeignKey('UserProfile', verbose_name=u'资产管理员', null=True, blank=True)
-    idc = models.ForeignKey('IDC', verbose_name=u'IDC机房', null=True, blank=True)
+    admin = models.ForeignKey('UserProfile', verbose_name=u'资产管理员', null=True, blank=True, on_delete=models.CASCADE)
+    idc = models.ForeignKey('IDC', verbose_name=u'IDC机房', null=True, blank=True, on_delete=models.CASCADE)
 
     status_choices = ((0, '在线'),
                       (1, '已下线'),
@@ -63,7 +63,7 @@ class Asset(models.Model):
 
 class Server(models.Model):
     """服务器设备"""
-    asset = models.OneToOneField('Asset')
+    asset = models.OneToOneField('Asset', on_delete=models.CASCADE)
     sub_assset_type_choices = (
         (0, 'PC服务器'),
         (1, '刀片机'),
@@ -76,7 +76,7 @@ class Server(models.Model):
     sub_asset_type = models.SmallIntegerField(choices=sub_assset_type_choices, verbose_name="服务器类型", default=0)
     created_by = models.CharField(choices=created_by_choices, max_length=32,
                                   default='auto')  # auto: auto created,   manual:created manually
-    hosted_on = models.ForeignKey('self', related_name='hosted_on_server', blank=True, null=True)  # for vitural server
+    hosted_on = models.ForeignKey('self', related_name='hosted_on_server', blank=True, null=True, on_delete=models.CASCADE)  # for vitural server
     # sn = models.CharField(u'SN号',max_length=128)
     # management_ip = models.CharField(u'管理IP',max_length=64,blank=True,null=True)
     # manufactory = models.ForeignKey(verbose_name=u'制造商',max_length=128,null=True, blank=True)
@@ -107,7 +107,7 @@ class Server(models.Model):
 
 class SecurityDevice(models.Model):
     """安全设备"""
-    asset = models.OneToOneField('Asset')
+    asset = models.OneToOneField('Asset', on_delete=models.CASCADE)
     sub_assset_type_choices = (
         (0, '防火墙'),
         (1, '入侵检测设备'),
@@ -123,7 +123,7 @@ class SecurityDevice(models.Model):
 class NetworkDevice(models.Model):
     """网络设备"""
 
-    asset = models.OneToOneField('Asset')
+    asset = models.OneToOneField('Asset', on_delete=models.CASCADE)
     sub_assset_type_choices = (
         (0, '路由器'),
         (1, '交换机'),
@@ -137,7 +137,7 @@ class NetworkDevice(models.Model):
     # sn = models.CharField(u'SN号',max_length=128,unique=True)
     # manufactory = models.CharField(verbose_name=u'制造商',max_length=128,null=True, blank=True)
     model = models.CharField(u'型号', max_length=128, null=True, blank=True)
-    firmware = models.ForeignKey('Software', blank=True, null=True)
+    firmware = models.ForeignKey('Software', blank=True, null=True, on_delete=models.CASCADE)
     port_num = models.SmallIntegerField(u'端口个数', null=True, blank=True)
     device_detail = models.TextField(u'设置详细配置', null=True, blank=True)
 
@@ -181,7 +181,7 @@ class Software(models.Model):
 class CPU(models.Model):
     """CPU组件"""
 
-    asset = models.OneToOneField('Asset')
+    asset = models.OneToOneField('Asset', on_delete=models.CASCADE)
     cpu_model = models.CharField(u'CPU型号', max_length=128, blank=True)
     cpu_count = models.SmallIntegerField(u'物理cpu个数')
     cpu_core_count = models.SmallIntegerField(u'cpu核数')
@@ -200,7 +200,7 @@ class CPU(models.Model):
 class RAM(models.Model):
     """内存组件"""
 
-    asset = models.ForeignKey('Asset')
+    asset = models.ForeignKey('Asset', on_delete=models.CASCADE)
     sn = models.CharField(u'SN号', max_length=128, blank=True, null=True)
     model = models.CharField(u'内存型号', max_length=128)
     slot = models.CharField(u'插槽', max_length=64)
@@ -223,7 +223,7 @@ class RAM(models.Model):
 class Disk(models.Model):
     """硬盘组件"""
 
-    asset = models.ForeignKey('Asset')
+    asset = models.ForeignKey('Asset', on_delete=models.CASCADE)
     sn = models.CharField(u'SN号', max_length=128, blank=True, null=True)
     slot = models.CharField(u'插槽位', max_length=64)
     # manufactory = models.CharField(u'制造商', max_length=64,blank=True,null=True)
@@ -255,7 +255,7 @@ class Disk(models.Model):
 class NIC(models.Model):
     """网卡组件"""
 
-    asset = models.ForeignKey('Asset')
+    asset = models.ForeignKey('Asset', on_delete=models.CASCADE)
     name = models.CharField(u'网卡名', max_length=64, blank=True, null=True)
     sn = models.CharField(u'SN号', max_length=128, blank=True, null=True)
     model = models.CharField(u'网卡型号', max_length=128, blank=True, null=True)
@@ -282,7 +282,7 @@ class NIC(models.Model):
 class RaidAdaptor(models.Model):
     """Raid卡"""
 
-    asset = models.ForeignKey('Asset')
+    asset = models.ForeignKey('Asset', on_delete=models.CASCADE)
     sn = models.CharField(u'SN号', max_length=128, blank=True, null=True)
     slot = models.CharField(u'插口', max_length=64)
     model = models.CharField(u'型号', max_length=64, blank=True, null=True)
@@ -315,7 +315,7 @@ class Manufactory(models.Model):
 class BusinessUnit(models.Model):
     """业务线"""
 
-    parent_unit = models.ForeignKey('self', related_name='parent_level', blank=True, null=True)
+    parent_unit = models.ForeignKey('self', related_name='parent_level', blank=True, null=True, on_delete=models.CASCADE)
     name = models.CharField(u'业务线', max_length=64, unique=True)
 
     # contact = models.ForeignKey('UserProfile',default=None)
@@ -369,7 +369,7 @@ class Tag(models.Model):
     """资产标签"""
 
     name = models.CharField('Tag name', max_length=32, unique=True)
-    creator = models.ForeignKey('UserProfile')
+    creator = models.ForeignKey('UserProfile', on_delete=models.CASCADE)
     create_date = models.DateField(auto_now_add=True)
 
     def __str__(self):
@@ -390,11 +390,11 @@ class EventLog(models.Model):
         (7, u'其它'),
     )
     event_type = models.SmallIntegerField(u'事件类型', choices=event_type_choices)
-    asset = models.ForeignKey('Asset')
+    asset = models.ForeignKey('Asset', on_delete=models.CASCADE)
     component = models.CharField('事件子项', max_length=255, blank=True, null=True)
     detail = models.TextField(u'事件详情')
     date = models.DateTimeField(u'事件时间', auto_now_add=True)
-    user = models.ForeignKey('UserProfile', verbose_name=u'事件源')
+    user = models.ForeignKey('UserProfile', verbose_name=u'事件源', on_delete=models.CASCADE)
     memo = models.TextField(u'备注', blank=True, null=True)
 
     def __str__(self):
@@ -445,7 +445,7 @@ class NewAssetApprovalZone(models.Model):
     data = models.TextField(u'资产数据')
     date = models.DateTimeField(u'汇报日期', auto_now_add=True)
     approved = models.BooleanField(u'已批准', default=False)
-    approved_by = models.ForeignKey('UserProfile', verbose_name=u'批准人', blank=True, null=True)
+    approved_by = models.ForeignKey('UserProfile', verbose_name=u'批准人', blank=True, null=True, on_delete=models.CASCADE)
     approved_date = models.DateTimeField(u'批准日期', blank=True, null=True)
 
     def __str__(self):
